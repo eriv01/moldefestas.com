@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -23,8 +21,7 @@ fbq('init', '1500617015193193');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
-/></noscript>
+src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,145 +31,414 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
 <link rel="dns-prefetch" href="https://doram.shop">
 
 <style>
-  :root{
-    --green:#1FAE5F;
-    --green-dark:#0E8A47;
-    --green-light:#E8F8EF;
-    --orange:#FF8A3D;
-    --ink:#1B2420;
-    --muted:#6B7570;
-    --bg:#FFFFFF;
-    --bg-alt:#F5FAF7;
-    --border:#E7ECE9;
-    --radius-lg:20px;
-    --radius-md:14px;
-    --radius-sm:10px;
-    --shadow:0 8px 24px rgba(20,40,30,0.08);
-    --shadow-strong:0 14px 36px rgba(20,40,30,0.16);
-    --maxw:480px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    font-family:'Nunito',sans-serif;
-    color:var(--ink);
-    background:var(--bg-alt);
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3{font-family:'Baloo 2',sans-serif;margin:0;line-height:1.18;}
-  p{margin:0;}
-  img{max-width:100%;display:block;}
-  button{font-family:inherit;cursor:pointer;border:none;}
-  .wrap{max-width:var(--maxw);margin:0 auto;background:var(--bg);min-height:100vh;position:relative;padding-bottom:20px;}
-  .section{padding:40px 20px;}
-  .section-alt{background:var(--bg-alt);}
-  .eyebrow{display:inline-block;background:var(--green-light);color:var(--green-dark);font-weight:800;font-size:13px;letter-spacing:.03em;padding:7px 16px;border-radius:999px;margin-bottom:14px;}
-  .hl-orange{color:var(--orange);}
-  .hl-green{color:var(--green-dark);text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:3px;}
-  .center{text-align:center;}
-  .muted{color:var(--muted);}
-  .promo-bar{background:linear-gradient(90deg,var(--green-dark),var(--green));color:#fff;text-align:center;font-size:12.5px;font-weight:800;letter-spacing:.02em;padding:9px 12px;position:sticky;top:0;z-index:50;}
-  .hero{padding-top:28px;}
-  .hero h1{font-size:28px;font-weight:800;margin-bottom:12px;}
-  .hero .sub{font-size:15.5px;color:var(--muted);margin-bottom:24px;}
-  .phone-caption{text-align:center;font-size:13px;font-weight:700;color:var(--green-dark);margin:14px 0 18px;}
-  .compare-box{background:var(--green-light);border:1px solid #CDEFDC;border-radius:var(--radius-md);padding:16px;font-size:14px;text-align:center;margin-bottom:20px;line-height:1.5;}
-  .compare-box strong{color:var(--green-dark);}
-  .btn-cta{display:block;width:100%;background:linear-gradient(180deg,var(--green),var(--green-dark));color:#fff;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:16.5px;text-align:center;padding:16px 18px;border-radius:999px;box-shadow:0 10px 22px rgba(15,138,71,0.35);transition:transform .15s ease;text-decoration:none;cursor:pointer;border:none;}
-  .btn-cta:active{transform:scale(.97);}
-  .micro{text-align:center;font-size:12px;color:var(--muted);margin-top:10px;}
-  .trust-row{display:flex;justify-content:center;gap:18px;margin-top:14px;font-size:12px;font-weight:700;color:var(--muted);}
-  .trust-row span{display:flex;align-items:center;gap:5px;}
-  .section-title{font-size:21px;font-weight:700;margin-bottom:6px;}
-  .section-sub{font-size:14px;color:var(--muted);margin-bottom:22px;}
-  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:22px;}
-  .ph-img{aspect-ratio:1/1;border-radius:var(--radius-sm);background:repeating-linear-gradient(45deg,#EDF4F0,#EDF4F0 10px,#E3EDE7 10px,#E3EDE7 20px);display:flex;align-items:center;justify-content:center;font-size:20px;color:#A9BBB1;overflow:hidden;}
-  .ph-img img{width:100%;height:100%;object-fit:cover;}
-  .steps{display:flex;flex-direction:column;gap:14px;}
-  .step-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);padding:18px;box-shadow:var(--shadow);text-align:center;}
-  .step-ic{width:46px;height:46px;border-radius:42% 58% 53% 47% / 45% 41% 59% 55%;background:var(--green-light);display:flex;align-items:center;justify-content:center;font-size:20px;margin:0 auto 10px;}
-  .step-tag{font-size:11px;font-weight:800;color:var(--green-dark);letter-spacing:.04em;margin-bottom:4px;}
-  .step-card h3{font-size:16px;margin-bottom:5px;}
-  .step-card p{font-size:13.5px;color:var(--muted);}
-  .testi-scroll{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;margin:0 -20px;padding-left:20px;padding-right:20px;}
-  .testi-card{flex:0 0 200px;scroll-snap-align:start;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);}
-  .testi-head{background:var(--green-dark);color:#fff;font-size:11px;font-weight:700;padding:8px 10px;}
-  .testi-img{aspect-ratio:9/14;background:repeating-linear-gradient(45deg,#EFF3F1,#EFF3F1 10px,#E6ECE9 10px,#E6ECE9 20px);display:flex;align-items:center;justify-content:center;font-size:12px;color:#A9BBB1;text-align:center;padding:10px;}
-  .tag-row{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin:18px 0 6px;}
-  .tag{font-size:11.5px;font-weight:800;padding:6px 12px;border-radius:999px;background:var(--bg-alt);border:1px solid var(--border);color:var(--ink);}
-  .more-line{text-align:center;font-size:13px;font-weight:700;color:var(--green-dark);margin:14px 0 18px;}
-  .bonus-list{display:flex;flex-direction:column;gap:10px;margin-bottom:18px;}
-  .bonus-item{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);padding:13px 14px;box-shadow:var(--shadow);}
-  .bonus-ic{font-size:20px;flex:0 0 auto;}
-  .bonus-item p{font-size:14px;font-weight:700;}
-  .bonus-value{text-align:center;font-size:13.5px;margin-top:6px;}
-  .bonus-value .old{color:var(--muted);text-decoration:line-through;margin-right:6px;}
-  .bonus-value .free{color:var(--green-dark);font-weight:800;}
-  .pricing{display:flex;flex-direction:column;gap:16px;}
-  .price-card{background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:22px 18px;}
-  .price-card.featured{border-color:var(--green);border-width:2px;box-shadow:0 0 0 5px var(--green-light), var(--shadow-strong);position:relative;padding-top:30px;background:linear-gradient(180deg,#fff 60%,var(--green-light));}
-  .price-card.basic{box-shadow:none;background:var(--bg-alt);opacity:.88;}
-  .badge-top{position:absolute;top:-13px;left:50%;transform:translateX(-50%) rotate(-3deg);background:var(--orange);color:#fff;font-size:11px;font-weight:800;padding:5px 14px;border-radius:999px;white-space:nowrap;}
-  .plan-name{font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;margin-bottom:6px;}
-  .price-card.featured .plan-name{color:var(--green-dark);}
-  .old-price{font-size:13px;color:var(--muted);text-decoration:line-through;}
-  .price{font-family:'Baloo 2',sans-serif;font-size:32px;font-weight:800;margin:2px 0 2px;}
-  .price-card.basic .price{font-size:24px;color:var(--muted);}
-  .price-card.featured .price{font-size:36px;color:var(--green-dark);}
-  .price-note{font-size:12px;color:var(--muted);margin-bottom:14px;}
-  .save-tag{display:inline-block;background:var(--green-light);color:var(--green-dark);font-size:11.5px;font-weight:800;padding:4px 10px;border-radius:999px;margin-bottom:14px;}
-  .feat-list{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-direction:column;gap:7px;}
-  .feat-list li{font-size:13.5px;display:flex;gap:8px;align-items:flex-start;line-height:1.4;}
-  .feat-list li.no{color:var(--muted);}
-  .feat-list li .ck{color:var(--green-dark);font-weight:800;}
-  .feat-list li .x{color:#C75A5A;font-weight:800;}
-  .btn-outline{display:block;width:100%;text-align:center;padding:13px;border-radius:999px;border:1.5px solid var(--border);color:var(--muted);font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13.5px;background:#fff;cursor:pointer;text-decoration:none;}
-  .price-card.featured .btn-outline{border-color:var(--green);color:var(--green-dark);font-size:15px;}
-  .social-proof-tag{text-align:center;font-size:12px;font-weight:700;color:var(--green-dark);margin-bottom:12px;}
-  .featured-foot{text-align:center;font-size:11.5px;color:var(--muted);margin-top:10px;}
-  .guarantee{text-align:center;background:var(--green-light);border-radius:var(--radius-lg);padding:28px 22px;}
-  .guarantee .ic{font-size:34px;margin-bottom:8px;}
-  .guarantee h3{font-size:17px;margin-bottom:8px;color:var(--green-dark);}
-  .guarantee p{font-size:13.5px;color:var(--muted);line-height:1.5;}
-  .faq-item{border-bottom:1px solid var(--border);}
-  .faq-item summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:16px 2px;font-size:14.5px;font-weight:700;cursor:pointer;}
-  .faq-item summary::-webkit-details-marker{display:none;}
-  .faq-item summary .chev{color:var(--green-dark);font-size:18px;transition:transform .2s ease;flex:0 0 auto;margin-left:10px;}
-  .faq-item[open] summary .chev{transform:rotate(45deg);}
-  .faq-item .faq-a{font-size:13.5px;color:var(--muted);line-height:1.55;padding:0 2px 16px;}
-  footer{text-align:center;font-size:11.5px;color:var(--muted);padding:26px 20px 20px;}
-  .hand-note{font-family:'Caveat',cursive;font-weight:700;color:var(--green-dark);font-size:18px;transform:rotate(-2deg);display:inline-block;}
-  .vsl{position:relative;margin:0 -20px 18px;overflow:hidden;background:#0E1A14;box-shadow:var(--shadow-strong);aspect-ratio:9/16;}
-  .vsl video{width:100%;height:100%;object-fit:cover;display:block;}
-  .vsl-facade{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#13251C,#0B1611);cursor:pointer;border:none;width:100%;}
-  .vsl-facade .play-btn{width:64px;height:64px;border-radius:50%;background:#fff;color:var(--green-dark);display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 8px 22px rgba(0,0,0,0.35);}
-  .vsl-facade .vsl-label{position:absolute;bottom:16px;left:16px;right:16px;color:#fff;font-size:13px;font-weight:700;text-align:left;}
-  .marquee{overflow:hidden;margin:0 -20px 20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);}
-  .marquee-track{display:flex;width:max-content;gap:10px;padding:0 20px;animation-name:marquee-scroll;animation-timing-function:linear;animation-iteration-count:infinite;animation-duration:30s;}
-  .marquee:hover .marquee-track{animation-play-state:paused;}
-  @keyframes marquee-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-  .marquee-item{flex:0 0 auto;overflow:hidden;background:var(--bg-alt);}
-  .marquee-item img{width:100%;height:100%;object-fit:cover;display:block;}
-  .marquee-festas .marquee-track{animation-duration:34s;}
-  .marquee-festas .marquee-item{width:178px;height:178px;border-radius:var(--radius-md);border:2px solid rgba(31,174,95,0.28);}
-  .marquee-festas .marquee-item:nth-child(odd){transform:rotate(-2deg);}
-  .marquee-festas .marquee-item:nth-child(even){transform:rotate(1.5deg);}
-  .marquee-depo .marquee-track{animation-duration:24s;}
-  .marquee-depo .marquee-item{width:185px;height:275px;border-radius:var(--radius-md);border:1px solid var(--border);box-shadow:var(--shadow);}
-  .marquee-temas .marquee-track{animation-duration:40s;animation-direction:reverse;}
-  .marquee-temas .marquee-item{width:158px;height:158px;border-radius:var(--radius-md);}
-  .marquee-temas .marquee-item:nth-child(3n){transform:rotate(-1.5deg);}
-  @media (max-width:360px){.hero h1{font-size:24px;}.price{font-size:28px;}}
+/* =============================================
+   VARIÁVEIS GLOBAIS
+   ============================================= */
+:root{
+  --green:#1FAE5F;
+  --green-dark:#0E8A47;
+  --green-light:#E8F8EF;
+  --orange:#FF8A3D;
+  --ink:#1B2420;
+  --muted:#6B7570;
+  --bg:#FFFFFF;
+  --bg-alt:#F5FAF7;
+  --border:#E7ECE9;
+  --radius-lg:20px;
+  --radius-md:14px;
+  --radius-sm:10px;
+  --shadow:0 8px 24px rgba(20,40,30,0.08);
+  --shadow-strong:0 14px 36px rgba(20,40,30,0.16);
+  --maxw:480px;
+  --red:#C0392B;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:'Nunito',sans-serif;
+  color:var(--ink);
+  background:var(--bg-alt);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Baloo 2',sans-serif;margin:0;line-height:1.18;}
+p{margin:0;}
+img{max-width:100%;display:block;}
+button{font-family:inherit;cursor:pointer;border:none;}
+a{text-decoration:none;}
+
+.wrap{
+  max-width:var(--maxw);
+  margin:0 auto;
+  background:var(--bg);
+  min-height:100vh;
+  position:relative;
+  padding-bottom:20px;
+}
+
+/* =============================================
+   PÁGINA DE VENDAS — estilos originais
+   ============================================= */
+.section{padding:40px 20px;}
+.section-alt{background:var(--bg-alt);}
+
+.eyebrow{
+  display:inline-block;background:var(--green-light);color:var(--green-dark);
+  font-weight:800;font-size:13px;letter-spacing:.03em;
+  padding:7px 16px;border-radius:999px;margin-bottom:14px;
+}
+.hl-orange{color:var(--orange);}
+.hl-green{color:var(--green-dark);text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:3px;}
+.center{text-align:center;}
+.muted{color:var(--muted);}
+
+.promo-bar{
+  background:linear-gradient(90deg,var(--green-dark),var(--green));
+  color:#fff;text-align:center;font-size:12.5px;font-weight:800;
+  letter-spacing:.02em;padding:9px 12px;position:sticky;top:0;z-index:50;
+}
+
+.hero{padding-top:28px;}
+.hero h1{font-size:28px;font-weight:800;margin-bottom:12px;}
+.hero .sub{font-size:15.5px;color:var(--muted);margin-bottom:24px;}
+.phone-caption{text-align:center;font-size:13px;font-weight:700;color:var(--green-dark);margin:14px 0 18px;}
+
+.compare-box{
+  background:var(--green-light);border:1px solid #CDEFDC;
+  border-radius:var(--radius-md);padding:16px;font-size:14px;
+  text-align:center;margin-bottom:20px;line-height:1.5;
+}
+.compare-box strong{color:var(--green-dark);}
+
+.btn-cta{
+  display:block;width:100%;
+  background:linear-gradient(180deg,var(--green),var(--green-dark));
+  color:#fff;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:16.5px;
+  text-align:center;padding:16px 18px;border-radius:999px;
+  box-shadow:0 10px 22px rgba(15,138,71,0.35);
+  transition:transform .15s ease;cursor:pointer;border:none;
+}
+.btn-cta:active{transform:scale(.97);}
+
+.micro{text-align:center;font-size:12px;color:var(--muted);margin-top:10px;}
+.trust-row{display:flex;justify-content:center;gap:18px;margin-top:14px;font-size:12px;font-weight:700;color:var(--muted);}
+.trust-row span{display:flex;align-items:center;gap:5px;}
+
+.section-title{font-size:21px;font-weight:700;margin-bottom:6px;}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:22px;}
+
+/* carrosséis */
+.marquee{
+  overflow:hidden;margin:0 -20px 20px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+}
+.marquee-track{
+  display:flex;width:max-content;gap:10px;padding:0 20px;
+  animation-name:marquee-scroll;animation-timing-function:linear;
+  animation-iteration-count:infinite;animation-duration:30s;
+}
+.marquee:hover .marquee-track{animation-play-state:paused;}
+@keyframes marquee-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.marquee-item{flex:0 0 auto;overflow:hidden;background:var(--bg-alt);}
+.marquee-item img{width:100%;height:100%;object-fit:cover;display:block;}
+.marquee-festas .marquee-track{animation-duration:34s;}
+.marquee-festas .marquee-item{width:178px;height:178px;border-radius:var(--radius-md);border:2px solid rgba(31,174,95,0.28);}
+.marquee-festas .marquee-item:nth-child(odd){transform:rotate(-2deg);}
+.marquee-festas .marquee-item:nth-child(even){transform:rotate(1.5deg);}
+.marquee-depo .marquee-track{animation-duration:24s;}
+.marquee-depo .marquee-item{width:185px;height:275px;border-radius:var(--radius-md);border:1px solid var(--border);box-shadow:var(--shadow);}
+.marquee-temas .marquee-track{animation-duration:40s;animation-direction:reverse;}
+.marquee-temas .marquee-item{width:158px;height:158px;border-radius:var(--radius-md);}
+.marquee-temas .marquee-item:nth-child(3n){transform:rotate(-1.5deg);}
+
+/* passos */
+.steps{display:flex;flex-direction:column;gap:14px;}
+.step-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);padding:18px;box-shadow:var(--shadow);text-align:center;}
+.step-ic{width:46px;height:46px;border-radius:42% 58% 53% 47%/45% 41% 59% 55%;background:var(--green-light);display:flex;align-items:center;justify-content:center;font-size:20px;margin:0 auto 10px;}
+.step-tag{font-size:11px;font-weight:800;color:var(--green-dark);letter-spacing:.04em;margin-bottom:4px;}
+.step-card h3{font-size:16px;margin-bottom:5px;}
+.step-card p{font-size:13.5px;color:var(--muted);}
+
+/* tags de tema */
+.tag-row{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin:18px 0 6px;}
+.tag{font-size:11.5px;font-weight:800;padding:6px 12px;border-radius:999px;background:var(--bg-alt);border:1px solid var(--border);color:var(--ink);}
+.more-line{text-align:center;font-size:13px;font-weight:700;color:var(--green-dark);margin:14px 0 18px;}
+
+/* bônus */
+.bonus-list{display:flex;flex-direction:column;gap:10px;margin-bottom:18px;}
+.bonus-item{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);padding:13px 14px;box-shadow:var(--shadow);}
+.bonus-ic{font-size:20px;flex:0 0 auto;}
+.bonus-item p{font-size:14px;font-weight:700;}
+.bonus-value{text-align:center;font-size:13.5px;margin-top:6px;}
+.bonus-value .old{color:var(--muted);text-decoration:line-through;margin-right:6px;}
+.bonus-value .free{color:var(--green-dark);font-weight:800;}
+
+/* preços */
+.pricing{display:flex;flex-direction:column;gap:16px;}
+.price-card{background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:22px 18px;}
+.price-card.featured{
+  border-color:var(--green);border-width:2px;
+  box-shadow:0 0 0 5px var(--green-light),var(--shadow-strong);
+  position:relative;padding-top:30px;
+  background:linear-gradient(180deg,#fff 60%,var(--green-light));
+}
+.price-card.basic{box-shadow:none;background:var(--bg-alt);opacity:.88;}
+.badge-top{
+  position:absolute;top:-13px;left:50%;
+  transform:translateX(-50%) rotate(-3deg);
+  background:var(--orange);color:#fff;font-size:11px;font-weight:800;
+  padding:5px 14px;border-radius:999px;white-space:nowrap;
+}
+.plan-name{font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;margin-bottom:6px;}
+.price-card.featured .plan-name{color:var(--green-dark);}
+.old-price{font-size:13px;color:var(--muted);text-decoration:line-through;}
+.price-val{font-family:'Baloo 2',sans-serif;font-size:32px;font-weight:800;margin:2px 0;}
+.price-card.basic .price-val{font-size:24px;color:var(--muted);}
+.price-card.featured .price-val{font-size:36px;color:var(--green-dark);}
+.price-note{font-size:12px;color:var(--muted);margin-bottom:14px;}
+.save-tag{display:inline-block;background:var(--green-light);color:var(--green-dark);font-size:11.5px;font-weight:800;padding:4px 10px;border-radius:999px;margin-bottom:14px;}
+.feat-list{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-direction:column;gap:7px;}
+.feat-list li{font-size:13.5px;display:flex;gap:8px;align-items:flex-start;line-height:1.4;}
+.feat-list li.no{color:var(--muted);}
+.feat-list li .ck{color:var(--green-dark);font-weight:800;}
+.feat-list li .x{color:#C75A5A;font-weight:800;}
+.btn-outline{
+  display:block;width:100%;text-align:center;padding:13px;border-radius:999px;
+  border:1.5px solid var(--border);color:var(--muted);
+  font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13.5px;
+  background:#fff;cursor:pointer;
+}
+.social-proof-tag{text-align:center;font-size:12px;font-weight:700;color:var(--green-dark);margin-bottom:12px;}
+.featured-foot{text-align:center;font-size:11.5px;color:var(--muted);margin-top:10px;}
+.hand-note{font-family:'Caveat',cursive;font-weight:700;color:var(--green-dark);font-size:18px;transform:rotate(-2deg);display:inline-block;}
+
+/* garantia */
+.guarantee{text-align:center;background:var(--green-light);border-radius:var(--radius-lg);padding:28px 22px;}
+.guarantee .ic{font-size:34px;margin-bottom:8px;}
+.guarantee h3{font-size:17px;margin-bottom:8px;color:var(--green-dark);}
+.guarantee p{font-size:13.5px;color:var(--muted);line-height:1.5;}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--border);}
+.faq-item summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:16px 2px;font-size:14.5px;font-weight:700;cursor:pointer;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary .chev{color:var(--green-dark);font-size:18px;transition:transform .2s;flex:0 0 auto;margin-left:10px;}
+.faq-item[open] summary .chev{transform:rotate(45deg);}
+.faq-item .faq-a{font-size:13.5px;color:var(--muted);line-height:1.55;padding:0 2px 16px;}
+
+footer{text-align:center;font-size:11.5px;color:var(--muted);padding:26px 20px 20px;}
+
+/* VSL */
+.vsl{position:relative;margin:0 -20px 18px;overflow:hidden;background:#0E1A14;box-shadow:var(--shadow-strong);aspect-ratio:9/16;}
+.vsl video{width:100%;height:100%;object-fit:cover;display:block;}
+.vsl-facade{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#13251C,#0B1611);cursor:pointer;border:none;width:100%;}
+.vsl-facade .play-btn{width:64px;height:64px;border-radius:50%;background:#fff;color:var(--green-dark);display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 8px 22px rgba(0,0,0,0.35);}
+.vsl-facade .vsl-label{position:absolute;bottom:16px;left:16px;right:16px;color:#fff;font-size:13px;font-weight:700;text-align:left;}
+
+/* =============================================
+   OVERLAY / MODAL CHECKOUT
+   ============================================= */
+.ck-overlay{
+  display:none;
+  position:fixed;inset:0;
+  background:rgba(10,20,14,0.72);
+  z-index:200;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.ck-overlay.open{display:block;}
+
+.ck-modal{
+  max-width:var(--maxw);
+  margin:0 auto;
+  background:var(--bg);
+  min-height:100vh;
+  position:relative;
+  padding-bottom:40px;
+}
+
+/* header modal */
+.ck-header{
+  background:linear-gradient(135deg,var(--green-dark),var(--green));
+  padding:14px 20px;
+  text-align:center;
+  position:sticky;top:0;z-index:10;
+  box-shadow:0 2px 12px rgba(14,138,71,0.3);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.ck-header .logo{font-family:'Baloo 2',sans-serif;font-size:17px;font-weight:800;color:#fff;}
+.ck-header .secure{font-size:11px;color:rgba(255,255,255,0.85);font-weight:700;}
+.ck-close{
+  background:rgba(255,255,255,0.2);border:none;color:#fff;
+  width:32px;height:32px;border-radius:50%;font-size:16px;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;flex:0 0 auto;
+}
+
+/* banner checkout */
+.ck-banner{
+  width:100%;aspect-ratio:16/7;
+  background:linear-gradient(135deg,var(--green-dark),var(--green));
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.ck-banner img{width:100%;height:100%;object-fit:cover;}
+/* ⬇️ Substitua o conteúdo abaixo por <img src="URL_DO_SEU_BANNER"> */
+.ck-banner-ph{color:#fff;font-family:'Baloo 2',sans-serif;font-size:13px;font-weight:700;text-align:center;padding:16px;opacity:.75;}
+
+/* urgência */
+.urgency-bar{
+  background:#FFF4E5;border-bottom:1px solid #FFD9A0;
+  padding:10px 16px;text-align:center;
+  font-size:12.5px;font-weight:800;color:#B05A00;
+}
+#countdown{font-size:15px;color:var(--red);}
+
+.ck-body{padding:20px;}
+
+/* plano selecionado */
+.plan-badge{
+  background:linear-gradient(135deg,var(--green-light),#fff);
+  border:1.5px solid var(--green);border-radius:var(--radius-md);
+  padding:14px 16px;display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:18px;box-shadow:var(--shadow);
+}
+.plan-badge .pi .pl{font-size:11px;font-weight:800;color:var(--green-dark);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px;}
+.plan-badge .pi .pn{font-size:15px;font-weight:800;color:var(--ink);}
+.plan-badge .pp{font-family:'Baloo 2',sans-serif;font-size:22px;font-weight:800;color:var(--green-dark);white-space:nowrap;}
+.plan-badge .po{font-size:11px;color:var(--muted);text-decoration:line-through;text-align:right;}
+
+/* formulário */
+.form-section{margin-bottom:22px;}
+.form-section h3{font-size:15px;font-weight:800;color:var(--ink);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.num-badge{width:24px;height:24px;background:var(--green);color:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex:0 0 auto;}
+.num-badge.orange{background:var(--orange);}
+.field{margin-bottom:13px;}
+.field label{display:block;font-size:12.5px;font-weight:800;color:var(--ink);margin-bottom:5px;}
+.field input{
+  width:100%;padding:13px 14px;
+  border:1.5px solid var(--border);border-radius:var(--radius-sm);
+  font-family:'Nunito',sans-serif;font-size:15px;color:var(--ink);
+  background:#fff;outline:none;transition:border-color .2s;-webkit-appearance:none;
+}
+.field input:focus{border-color:var(--green);}
+.field input.error{border-color:var(--red);}
+.field-error{color:var(--red);font-size:11.5px;font-weight:700;margin-top:4px;display:none;}
+
+/* bumps */
+.bump-card{
+  border:2px dashed var(--border);border-radius:var(--radius-md);
+  padding:14px;margin-bottom:10px;background:#fff;
+  cursor:pointer;transition:border-color .2s,background .2s,box-shadow .2s;
+  display:flex;gap:12px;align-items:center;
+}
+.bump-card.selected{border-color:var(--green);border-style:solid;background:var(--green-light);box-shadow:0 0 0 3px rgba(31,174,95,0.12);}
+.bump-img-ph{
+  width:72px;height:72px;border-radius:var(--radius-sm);
+  background:linear-gradient(135deg,var(--bg-alt),var(--border));
+  flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:22px;
+  overflow:hidden;
+}
+.bump-img-ph img{width:100%;height:100%;object-fit:cover;}
+.bump-info{flex:1;}
+.bump-tag{font-size:10px;font-weight:800;color:var(--orange);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px;}
+.bump-name{font-size:13.5px;font-weight:800;color:var(--ink);margin-bottom:3px;line-height:1.3;}
+.bump-desc{font-size:12px;color:var(--muted);line-height:1.4;margin-bottom:6px;}
+.bump-price-row{display:flex;align-items:center;gap:8px;}
+.bump-old{font-size:11px;color:var(--muted);text-decoration:line-through;}
+.bump-price{font-size:14px;font-weight:800;color:var(--green-dark);}
+.bump-check{width:22px;height:22px;border-radius:50%;border:2px solid var(--border);background:#fff;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:12px;color:transparent;transition:all .2s;}
+.bump-card.selected .bump-check{background:var(--green);border-color:var(--green);color:#fff;}
+
+/* resumo */
+.summary-box{background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-md);padding:16px;margin-bottom:20px;}
+.summary-title{font-size:13px;font-weight:800;color:var(--muted);margin-bottom:10px;text-transform:uppercase;letter-spacing:.03em;}
+.summary-line{display:flex;justify-content:space-between;font-size:13.5px;padding:4px 0;border-bottom:1px dashed var(--border);}
+.summary-line:last-child{border-bottom:none;}
+.summary-line.total{font-weight:800;font-size:16px;color:var(--green-dark);padding-top:10px;border-top:1.5px solid var(--border);border-bottom:none;margin-top:4px;}
+
+/* botão PIX */
+.btn-pix{
+  display:block;width:100%;
+  background:linear-gradient(180deg,var(--green),var(--green-dark));
+  color:#fff;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:17px;
+  text-align:center;padding:17px 18px;border-radius:999px;
+  box-shadow:0 10px 22px rgba(15,138,71,0.35);
+  transition:transform .15s,opacity .2s;border:none;cursor:pointer;margin-bottom:10px;
+}
+.btn-pix:active{transform:scale(.97);}
+.btn-pix:disabled{opacity:.6;cursor:not-allowed;}
+.spinner{display:none;animation:spin .8s linear infinite;margin-right:6px;}
+.btn-pix.loading .spinner{display:inline-block;}
+.btn-pix.loading .btn-text{display:none;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.pix-micro{text-align:center;font-size:11.5px;color:var(--muted);margin-bottom:20px;}
+
+/* trust */
+.trust-strip{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:20px;}
+.trust-item{display:flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;color:var(--muted);}
+
+/* mini garantia */
+.mini-guarantee{background:var(--green-light);border-radius:var(--radius-md);padding:14px 16px;display:flex;align-items:center;gap:10px;margin-bottom:20px;}
+.mini-guarantee .ic{font-size:22px;flex:0 0 auto;}
+.mini-guarantee p{font-size:12.5px;color:var(--green-dark);font-weight:700;line-height:1.4;}
+
+/* =============================================
+   TELA PIX GERADO
+   ============================================= */
+#pix-screen{display:none;}
+.pix-box{background:var(--green-light);border:2px solid var(--green);border-radius:var(--radius-lg);padding:24px 20px;text-align:center;margin-bottom:20px;}
+.pix-box h3{font-size:18px;font-weight:800;color:var(--green-dark);margin-bottom:6px;}
+.pix-box p{font-size:13.5px;color:var(--muted);margin-bottom:16px;line-height:1.5;}
+.pix-qr{width:200px;height:200px;margin:0 auto 16px;border-radius:var(--radius-md);overflow:hidden;background:#fff;padding:8px;box-shadow:var(--shadow);}
+.pix-qr img{width:100%;height:100%;object-fit:contain;}
+.pix-code-label{font-size:12px;font-weight:800;color:var(--ink);margin-bottom:8px;}
+.pix-code-box{background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px;font-size:12px;color:var(--muted);word-break:break-all;line-height:1.5;margin-bottom:12px;text-align:left;max-height:80px;overflow:hidden;}
+.btn-copy{display:block;width:100%;background:#fff;border:2px solid var(--green);color:var(--green-dark);font-family:'Baloo 2',sans-serif;font-weight:700;font-size:15px;padding:13px;border-radius:999px;cursor:pointer;transition:all .2s;margin-bottom:14px;}
+.btn-copy.copied{background:var(--green);color:#fff;border-color:var(--green);}
+.pix-timer{font-size:12px;font-weight:800;color:var(--orange);margin-top:8px;}
+.pix-status{margin-top:16px;padding:12px;border-radius:var(--radius-sm);background:#fff;border:1px solid var(--border);font-size:13px;font-weight:700;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:8px;}
+.status-dot{width:10px;height:10px;border-radius:50%;background:var(--orange);animation:pulse 1.5s ease infinite;flex:0 0 auto;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(.8);}}
+
+/* =============================================
+   TELA CONFIRMAÇÃO
+   ============================================= */
+#confirm-screen{display:none;}
+.confirm-box{text-align:center;padding:30px 20px;}
+.confirm-ic{font-size:60px;margin-bottom:16px;display:block;}
+.confirm-box h2{font-size:24px;font-weight:800;color:var(--green-dark);margin-bottom:10px;}
+.confirm-box p{font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:20px;}
+.access-btn{
+  display:block;width:100%;
+  background:linear-gradient(180deg,var(--green),var(--green-dark));
+  color:#fff;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:17px;
+  text-align:center;padding:17px 18px;border-radius:999px;
+  box-shadow:0 10px 22px rgba(15,138,71,0.35);
+  text-decoration:none;margin-bottom:12px;border:none;cursor:pointer;
+}
+.confirm-detail{background:var(--bg-alt);border-radius:var(--radius-md);padding:16px;margin-top:16px;text-align:left;}
+.confirm-detail p{font-size:13px;color:var(--muted);line-height:1.7;}
+.confirm-detail strong{color:var(--ink);}
+
+@media(max-width:360px){
+  .hero h1{font-size:24px;}
+  .price-val{font-size:28px !important;}
+  .bump-img-ph{width:58px;height:58px;}
+}
 </style>
 </head>
 <body>
 
+<!-- ============================================================
+     PÁGINA DE VENDAS
+     ============================================================ -->
 <div class="promo-bar">🔥 OFERTA SOMENTE HOJE <span id="today-date"></span></div>
 
-<div class="wrap">
+<div class="wrap" id="sales-page">
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO -->
   <section class="hero">
     <div class="section" style="padding-top:22px;">
       <div class="center">
@@ -180,7 +446,6 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
         <h1>+2.500 <span class="hl-orange">MOLDES</span> DE FESTA INFANTIL <span class="hl-green">PRONTOS</span> PARA BAIXAR E IMPRIMIR</h1>
         <p class="sub">Arquivos digitais prontos para imprimir e montar festas incríveis em casa.</p>
       </div>
-
       <div class="vsl" id="vslBox" data-src="https://doram.shop/wp-content/uploads/2026/06/vsl-fetas-kit.mp4">
         <button type="button" class="vsl-facade" id="vslPlay" aria-label="Assistir ao vídeo">
           <span class="play-btn">▶</span>
@@ -188,13 +453,11 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
         </button>
       </div>
       <p class="phone-caption">Baixe, imprima e monte sua festa em casa em poucos minutos.</p>
-
       <div class="compare-box">
         Decoradoras cobram entre <strong>R$300 e R$800</strong> para montar uma festa.<br>
         Aqui você paga apenas <strong>R$4,99</strong>.
       </div>
-
-      <a href="#precos" class="btn-cta">🎉 QUERO MEUS MOLDES AGORA</a>
+      <button class="btn-cta" onclick="abrirCheckout('premium')">🎉 QUERO MEUS MOLDES AGORA</button>
       <p class="micro">Produto 100% digital. Acesso imediato após pagamento.</p>
       <div class="trust-row">
         <span>🔒 Pagamento 100% seguro</span>
@@ -203,7 +466,7 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
     </div>
   </section>
 
-  <!-- ===== GALERIA ===== -->
+  <!-- GALERIA -->
   <section class="section section-alt">
     <div class="center">
       <h2 class="section-title">Veja festas feitas com os moldes</h2>
@@ -211,34 +474,34 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
     </div>
     <div class="marquee marquee-festas">
       <div class="marquee-track">
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-06.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-13.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-02.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-09.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-17-1.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-14.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-12.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-08.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-05.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-17.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-11.jpg" alt="Festa montada com os moldes" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-06.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-13.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-02.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-09.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-17-1.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-14.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-12.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-08.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-05.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-17.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-11.jpg" alt="" loading="lazy" decoding="async" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-06.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-13.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-02.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-09.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-17-1.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-14.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-12.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-08.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-05.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-17.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-11.jpg" alt="Festa" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-06.jpg" alt="" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-13.jpg" alt="" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-02.jpg" alt="" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-09.jpg" alt="" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-17-1.jpg" alt="" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-14.jpg" alt="" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-12.jpg" alt="" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-08.jpg" alt="" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-05.jpg" alt="" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-17.jpg" alt="" loading="lazy" width="178" height="178"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/festa-11.jpg" alt="" loading="lazy" width="178" height="178"></div>
       </div>
     </div>
-    <a href="#precos" class="btn-cta">🎉 QUERO FAZER FESTAS ASSIM</a>
+    <button class="btn-cta" onclick="abrirCheckout('premium')">🎉 QUERO FAZER FESTAS ASSIM</button>
   </section>
 
-  <!-- ===== COMO FUNCIONA ===== -->
+  <!-- COMO FUNCIONA -->
   <section class="section">
     <div class="center">
       <h2 class="section-title">Como Funciona?</h2>
@@ -266,7 +529,7 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
     </div>
   </section>
 
-  <!-- ===== DEPOIMENTOS ===== -->
+  <!-- DEPOIMENTOS -->
   <section class="section section-alt">
     <div class="center">
       <h2 class="section-title">Depoimentos de Nossas Clientes</h2>
@@ -274,19 +537,19 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
     </div>
     <div class="marquee marquee-depo">
       <div class="marquee-track">
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/testimonial-tamira-l5ltG3qw.webp" alt="Depoimento de cliente" loading="lazy" decoding="async" width="185" height="275"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/t1.jpg" alt="Depoimento de cliente" loading="lazy" decoding="async" width="185" height="275"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/testimonial-sirlane-DyBcjxpJ.webp" alt="Depoimento de cliente" loading="lazy" decoding="async" width="185" height="275"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/t3.jpg" alt="Depoimento de cliente" loading="lazy" decoding="async" width="185" height="275"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/testimonial-tamira-l5ltG3qw.webp" alt="" loading="lazy" decoding="async" width="185" height="275"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/t1.jpg" alt="" loading="lazy" decoding="async" width="185" height="275"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/testimonial-sirlane-DyBcjxpJ.webp" alt="" loading="lazy" decoding="async" width="185" height="275"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/t3.jpg" alt="" loading="lazy" decoding="async" width="185" height="275"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/testimonial-tamira-l5ltG3qw.webp" alt="Depoimento" loading="lazy" width="185" height="275"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/t1.jpg" alt="Depoimento" loading="lazy" width="185" height="275"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/testimonial-sirlane-DyBcjxpJ.webp" alt="Depoimento" loading="lazy" width="185" height="275"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/t3.jpg" alt="Depoimento" loading="lazy" width="185" height="275"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/testimonial-tamira-l5ltG3qw.webp" alt="" loading="lazy" width="185" height="275"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/t1.jpg" alt="" loading="lazy" width="185" height="275"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/testimonial-sirlane-DyBcjxpJ.webp" alt="" loading="lazy" width="185" height="275"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/t3.jpg" alt="" loading="lazy" width="185" height="275"></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== TEMAS ===== -->
+  <!-- TEMAS -->
   <section class="section">
     <div class="center">
       <h2 class="section-title">Alguns dos Temas Disponíveis</h2>
@@ -294,30 +557,30 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
     </div>
     <div class="marquee marquee-temas">
       <div class="marquee-track">
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_03.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-59.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-67.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-1.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/ana_castela_02.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_06.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_05.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/kit1-8XJHx3nd.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/kit2-I1vxxmIc.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/kit3-WuHv-7Hg.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/kit5-EGkvLyMq.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/kit6-5WBoJoFR.webp" alt="Tema de festa disponível" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_03.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-59.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-67.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-1.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/ana_castela_02.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_06.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_05.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/kit1-8XJHx3nd.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/kit2-I1vxxmIc.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/kit3-WuHv-7Hg.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/kit5-EGkvLyMq.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
-        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/kit6-5WBoJoFR.webp" alt="" loading="lazy" decoding="async" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_03.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-59.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-67.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-1.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/ana_castela_02.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_06.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_05.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/kit1-8XJHx3nd.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/kit2-I1vxxmIc.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/kit3-WuHv-7Hg.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/kit5-EGkvLyMq.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item"><img src="https://doram.shop/wp-content/uploads/2026/06/kit6-5WBoJoFR.webp" alt="Tema" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_03.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-59.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-67.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/FOTO-CARROSSEL-1.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/ana_castela_02.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_06.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/stich_05.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/kit1-8XJHx3nd.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/kit2-I1vxxmIc.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/kit3-WuHv-7Hg.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/kit5-EGkvLyMq.webp" alt="" loading="lazy" width="158" height="158"></div>
+        <div class="marquee-item" aria-hidden="true"><img src="https://doram.shop/wp-content/uploads/2026/06/kit6-5WBoJoFR.webp" alt="" loading="lazy" width="158" height="158"></div>
       </div>
     </div>
     <div class="tag-row">
@@ -327,10 +590,10 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
       <span class="tag">Jardim Encantado</span>
     </div>
     <p class="more-line">E muito mais... São tantos que nem couberam aqui!</p>
-    <a href="#precos" class="btn-cta">🎉 QUERO TODOS OS TEMAS</a>
+    <button class="btn-cta" onclick="abrirCheckout('premium')">🎉 QUERO TODOS OS TEMAS</button>
   </section>
 
-  <!-- ===== BÔNUS ===== -->
+  <!-- BÔNUS -->
   <section class="section section-alt">
     <div class="center">
       <h2 class="section-title">Bônus Exclusivos</h2>
@@ -345,20 +608,18 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
       <div class="bonus-item"><span class="bonus-ic">🔥</span><p>Temas em Alta</p></div>
       <div class="bonus-item"><span class="bonus-ic">🎬</span><p>Tutorial em Vídeo com Especialista</p></div>
     </div>
-    <p class="bonus-value"><span class="old">DE R$297</span><span class="free">por: GRÁTIS</span></p>
+    <p class="bonus-value"><span class="old">DE R$297</span> <span class="free">por: GRÁTIS</span></p>
   </section>
 
-  <!-- ===== PREÇOS ===== -->
+  <!-- PREÇOS -->
   <section class="section" id="precos" style="scroll-margin-top:56px;">
-    <div class="center">
-      <h2 class="section-title">Escolha seu pacote</h2>
-    </div>
+    <div class="center"><h2 class="section-title">Escolha seu pacote</h2></div>
     <div class="pricing">
 
-      <!-- BÁSICO → checkout com ?plano=basico -->
+      <!-- BÁSICO -->
       <div class="price-card basic">
         <div class="plan-name">Pacote Básico</div>
-        <div class="price">R$ 5,99</div>
+        <div class="price-val">R$ 5,99</div>
         <div class="price-note">Pagamento único</div>
         <ul class="feat-list">
           <li><span class="ck">✓</span> +2.500 moldes de festa</li>
@@ -367,15 +628,15 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
           <li class="no"><span class="x">✕</span> NÃO inclui bônus</li>
           <li class="no"><span class="x">✕</span> NÃO inclui atualizações</li>
         </ul>
-        <a href="/checkout?plano=basico" class="btn-outline" onclick="trackClick('basico')">Quero só o básico</a>
+        <button class="btn-outline" onclick="abrirCheckout('basico')">Quero só o básico</button>
       </div>
 
-      <!-- PREMIUM → checkout com ?plano=premium -->
+      <!-- PREMIUM -->
       <div class="price-card featured">
         <span class="badge-top">MAIS ESCOLHIDO</span>
         <div class="plan-name">Pacote Premium + Bônus</div>
         <div class="old-price">de R$297 por apenas:</div>
-        <div class="price">R$ 19,90</div>
+        <div class="price-val">R$ 19,90</div>
         <div class="price-note">Pagamento único</div>
         <span class="save-tag">Economize mais de R$270 hoje</span>
         <ul class="feat-list">
@@ -389,27 +650,22 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
           <li><span class="ck">✓</span> Tutorial em vídeo</li>
           <li><span class="ck">✓</span> Atualizações futuras</li>
           <li><span class="ck">✓</span> Acesso imediato e vitalício</li>
-          <li><span class="ck">✓</span> Convites</li>
-          <li><span class="ck">✓</span> Caixa Milk</li>
-          <li><span class="ck">✓</span> Pirâmide</li>
-          <li><span class="ck">✓</span> Sushi</li>
-          <li><span class="ck">✓</span> Bala</li>
-          <li><span class="ck">✓</span> Mala</li>
-          <li><span class="ck">✓</span> Painéis</li>
+          <li><span class="ck">✓</span> Convites, Caixa Milk, Pirâmide</li>
+          <li><span class="ck">✓</span> Sushi, Bala, Mala, Painéis</li>
           <li><span class="ck">✓</span> Centros de Mesa</li>
           <li><span class="ck">✓</span> Etiquetas Escolares</li>
           <li><span class="ck">✓</span> Suporte e-mail e WhatsApp</li>
           <li><span class="ck">✓</span> Garantia 30 dias</li>
         </ul>
         <p class="social-proof-tag">⭐ A maioria das clientes escolhe este pacote</p>
-        <a href="/checkout?plano=premium" class="btn-cta" onclick="trackClick('premium')">🔥 QUERO TUDO LIBERADO AGORA</a>
+        <button class="btn-cta" onclick="abrirCheckout('premium')">🔥 QUERO TUDO LIBERADO AGORA</button>
         <p class="featured-foot"><span class="hand-note">vale muito mais a pena 💚</span></p>
       </div>
 
     </div>
   </section>
 
-  <!-- ===== GARANTIA ===== -->
+  <!-- GARANTIA -->
   <section class="section">
     <div class="guarantee">
       <div class="ic">🛡️</div>
@@ -418,11 +674,9 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
     </div>
   </section>
 
-  <!-- ===== FAQ ===== -->
+  <!-- FAQ -->
   <section class="section section-alt">
-    <div class="center">
-      <h2 class="section-title">Perguntas Frequentes</h2>
-    </div>
+    <div class="center"><h2 class="section-title">Perguntas Frequentes</h2></div>
     <div style="margin-top:10px;">
       <details class="faq-item">
         <summary>Preciso saber mexer em design? <span class="chev">+</span></summary>
@@ -446,46 +700,576 @@ src="https://www.facebook.com/tr?id=1500617015193193&ev=PageView&noscript=1"
       </details>
     </div>
     <div style="margin-top:22px;">
-      <a href="#precos" class="btn-cta">🎉 TIREI MINHAS DÚVIDAS!</a>
+      <button class="btn-cta" onclick="abrirCheckout('premium')">🎉 TIREI MINHAS DÚVIDAS!</button>
     </div>
   </section>
 
-  <footer>
-    © <span id="year"></span> — Mãe Festeira — Todos os direitos reservados.
-  </footer>
-
+  <footer>© <span id="year"></span> — Mãe Festeira — Todos os direitos reservados.</footer>
 </div>
 
+
+<!-- ============================================================
+     OVERLAY CHECKOUT (modal full-screen)
+     ============================================================ -->
+<div class="ck-overlay" id="ck-overlay">
+  <div class="ck-modal">
+
+    <!-- HEADER -->
+    <header class="ck-header">
+      <div>
+        <div class="logo">🎉 Mãe Festeira</div>
+        <div class="secure">🔒 Checkout Seguro · PIX Instantâneo</div>
+      </div>
+      <button class="ck-close" onclick="fecharCheckout()" aria-label="Fechar">✕</button>
+    </header>
+
+    <!-- BANNER -->
+    <!-- ⬇️ Para adicionar banner: substitua o conteúdo abaixo por <img src="SUA_URL" alt="Banner"> -->
+    <div class="ck-banner">
+      <div class="ck-banner-ph">
+        ⬆️ Adicione sua imagem de banner aqui<br>
+        <small>Recomendado: 960×420px</small>
+      </div>
+    </div>
+
+    <!-- URGÊNCIA -->
+    <div class="urgency-bar">⏰ Oferta expira em: <span id="countdown">10:00</span></div>
+
+    <!-- TELA 1: FORMULÁRIO + BUMPS -->
+    <div id="form-screen">
+      <div class="ck-body">
+
+        <!-- PLANO SELECIONADO -->
+        <div class="plan-badge">
+          <div class="pi">
+            <div class="pl">Você está comprando</div>
+            <div class="pn" id="plan-name-display">Pacote Premium + Bônus</div>
+          </div>
+          <div>
+            <div class="po" id="plan-old-display">de R$297</div>
+            <div class="pp" id="plan-price-display">R$19,90</div>
+          </div>
+        </div>
+
+        <!-- DADOS -->
+        <div class="form-section">
+          <h3><span class="num-badge">1</span> Seus dados</h3>
+          <div class="field">
+            <label for="f-nome">Nome completo</label>
+            <input type="text" id="f-nome" placeholder="Seu nome" autocomplete="name" oninput="onNameInput(this)">
+            <div class="field-error" id="err-nome">Por favor, informe seu nome.</div>
+          </div>
+          <div class="field">
+            <label for="f-email">E-mail</label>
+            <input type="email" id="f-email" placeholder="seu@email.com" autocomplete="email" inputmode="email">
+            <div class="field-error" id="err-email">Informe um e-mail válido.</div>
+          </div>
+          <div class="field">
+            <label for="f-zap">WhatsApp</label>
+            <input type="tel" id="f-zap" placeholder="(11) 99999-9999" autocomplete="tel" inputmode="numeric" oninput="maskPhone(this)">
+            <div class="field-error" id="err-zap">Informe seu WhatsApp.</div>
+          </div>
+        </div>
+
+        <!-- BUMPS -->
+        <div class="form-section">
+          <h3><span class="num-badge orange">2</span> Adicione ao pedido <small style="font-size:11px;font-weight:600;color:var(--muted)">(opcional)</small></h3>
+
+          <!-- BUMP 1 -->
+          <!-- ⬇️ Para adicionar imagem: substitua o emoji dentro de .bump-img-ph por <img src="URL"> -->
+          <div class="bump-card" id="bump-0" onclick="toggleBump(0)">
+            <div class="bump-img-ph">🎁</div>
+            <div class="bump-info">
+              <div class="bump-tag">⚡ OFERTA ESPECIAL</div>
+              <div class="bump-name">Produto 01 — [Adicione o nome aqui]</div>
+              <div class="bump-desc">[Descrição curta do produto 01]</div>
+              <div class="bump-price-row">
+                <span class="bump-old">R$29,90</span>
+                <span class="bump-price">+ R$2,90</span>
+              </div>
+            </div>
+            <div class="bump-check" id="bck-0">✓</div>
+          </div>
+
+          <!-- BUMP 2 -->
+          <div class="bump-card" id="bump-1" onclick="toggleBump(1)">
+            <div class="bump-img-ph">🎨</div>
+            <div class="bump-info">
+              <div class="bump-tag">⚡ OFERTA ESPECIAL</div>
+              <div class="bump-name">Produto 02 — [Adicione o nome aqui]</div>
+              <div class="bump-desc">[Descrição curta do produto 02]</div>
+              <div class="bump-price-row">
+                <span class="bump-old">R$29,90</span>
+                <span class="bump-price">+ R$2,90</span>
+              </div>
+            </div>
+            <div class="bump-check" id="bck-1">✓</div>
+          </div>
+
+          <!-- BUMP 3 -->
+          <div class="bump-card" id="bump-2" onclick="toggleBump(2)">
+            <div class="bump-img-ph">✨</div>
+            <div class="bump-info">
+              <div class="bump-tag">⚡ OFERTA ESPECIAL</div>
+              <div class="bump-name">Produto 03 — [Adicione o nome aqui]</div>
+              <div class="bump-desc">[Descrição curta do produto 03]</div>
+              <div class="bump-price-row">
+                <span class="bump-old">R$29,90</span>
+                <span class="bump-price">+ R$2,90</span>
+              </div>
+            </div>
+            <div class="bump-check" id="bck-2">✓</div>
+          </div>
+        </div>
+
+        <!-- RESUMO -->
+        <div class="form-section">
+          <h3><span class="num-badge">3</span> Resumo do pedido</h3>
+          <div class="summary-box">
+            <div class="summary-title">Itens selecionados</div>
+            <div class="summary-line"><span id="s-plan-name">Pacote Premium</span><span id="s-plan-price">R$19,90</span></div>
+            <div id="s-bump-0" class="summary-line" style="display:none;"><span>Produto 01</span><span>R$2,90</span></div>
+            <div id="s-bump-1" class="summary-line" style="display:none;"><span>Produto 02</span><span>R$2,90</span></div>
+            <div id="s-bump-2" class="summary-line" style="display:none;"><span>Produto 03</span><span>R$2,90</span></div>
+            <div class="summary-line total"><span>Total</span><span id="s-total">R$19,90</span></div>
+          </div>
+        </div>
+
+        <div class="mini-guarantee">
+          <span class="ic">🛡️</span>
+          <p>Garantia de 30 dias. Se não gostar, devolvemos 100% do seu dinheiro.</p>
+        </div>
+
+        <div class="trust-strip">
+          <div class="trust-item">🔒 Pagamento seguro</div>
+          <div class="trust-item">⚡ Acesso imediato</div>
+          <div class="trust-item">✅ Garantia 30 dias</div>
+        </div>
+
+        <button class="btn-pix" id="btn-gerar" onclick="gerarPix()">
+          <span class="spinner">⟳</span>
+          <span class="btn-text">🔑 GERAR PIX AGORA</span>
+        </button>
+        <p class="pix-micro">PIX aprovado instantaneamente · Produto digital · Entrega por e-mail</p>
+      </div>
+    </div><!-- /form-screen -->
+
+    <!-- TELA 2: PIX GERADO -->
+    <div id="pix-screen">
+      <div class="ck-body">
+        <div class="pix-box">
+          <h3>✅ PIX gerado com sucesso!</h3>
+          <p>Escaneie o QR Code com o app do seu banco ou copie o código abaixo.</p>
+          <div class="pix-qr"><img id="qr-img" src="" alt="QR Code PIX"></div>
+          <div class="pix-code-label">Copie o código PIX:</div>
+          <div class="pix-code-box" id="pix-code-text"></div>
+          <button class="btn-copy" id="btn-copy" onclick="copyPix()">📋 Copiar código PIX</button>
+          <div class="pix-timer">⏳ PIX expira em: <span id="pix-countdown">15:00</span></div>
+          <div class="pix-status">
+            <div class="status-dot"></div>
+            <span id="status-text">Aguardando pagamento...</span>
+          </div>
+        </div>
+
+        <div class="summary-box">
+          <div class="summary-title">Resumo</div>
+          <div class="summary-line"><span id="p-plan-name">Pacote Premium</span><span id="p-plan-price">R$19,90</span></div>
+          <div id="p-bump-0" class="summary-line" style="display:none;"><span>Produto 01</span><span>R$2,90</span></div>
+          <div id="p-bump-1" class="summary-line" style="display:none;"><span>Produto 02</span><span>R$2,90</span></div>
+          <div id="p-bump-2" class="summary-line" style="display:none;"><span>Produto 03</span><span>R$2,90</span></div>
+          <div class="summary-line total"><span>Total</span><span id="p-total">R$19,90</span></div>
+        </div>
+      </div>
+    </div><!-- /pix-screen -->
+
+    <!-- TELA 3: CONFIRMAÇÃO -->
+    <div id="confirm-screen">
+      <div class="ck-body">
+        <div class="confirm-box">
+          <span class="confirm-ic">🎉</span>
+          <h2>Pagamento confirmado!</h2>
+          <p>Obrigada pela sua compra, <strong id="confirm-nome"></strong>! Clique abaixo para acessar seu material agora mesmo.</p>
+          <!--
+            ⬇️ SUBSTITUA o href="#" pela URL de entrega
+            Ex: href="https://drive.google.com/drive/folders/SEU_ID"
+          -->
+          <a href="#" id="access-link" class="access-btn" target="_blank" rel="noopener">
+            🎀 ACESSAR MEU MATERIAL AGORA
+          </a>
+          <div class="confirm-detail">
+            <p>
+              📧 Um link de acesso também foi enviado para <strong id="confirm-email"></strong>.<br><br>
+              📱 Precisa de ajuda? Entre em contato pelo WhatsApp ou e-mail de suporte.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- /confirm-screen -->
+
+  </div><!-- /ck-modal -->
+</div><!-- /ck-overlay -->
+
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
 <script>
-  window.scrollTo(0, 0);
-  window.addEventListener('load', function(){ window.scrollTo(0, 0); });
+// ==========================================
+// CONFIGURAÇÃO — edite antes de publicar
+// ==========================================
+var PLANS = {
+  basico:  { name:'Pacote Básico',          price:5.99,  old:'de R$27',  label:'R$5,99'  },
+  premium: { name:'Pacote Premium + Bônus', price:19.90, old:'de R$297', label:'R$19,90' }
+};
+var BUMP_PRICE = 2.90;
 
-  document.getElementById('today-date').textContent = new Date().toLocaleDateString('pt-BR');
-  document.getElementById('year').textContent = new Date().getFullYear();
+// ⬇️ Substitua pelas URLs reais de entrega do produto após configurar
+var ACCESS_URLS = {
+  basico:  '#LINK_ACESSO_BASICO',
+  premium: '#LINK_ACESSO_PREMIUM'
+};
 
-  // VSL lazy load
-  var vslBox = document.getElementById('vslBox');
-  var vslPlay = document.getElementById('vslPlay');
-  if(vslBox && vslPlay){
-    vslPlay.addEventListener('click', function(){
-      var src = vslBox.getAttribute('data-src');
-      var video = document.createElement('video');
-      video.src = src; video.controls = true; video.autoplay = true;
-      video.playsInline = true; video.setAttribute('preload','auto');
-      vslBox.innerHTML = ''; vslBox.appendChild(video);
-      video.play().catch(function(){});
-    }, {once:true});
+// ==========================================
+// ESTADO
+// ==========================================
+var currentPlan    = 'premium';
+var bumpsSelected  = [false, false, false];
+var pixPaymentId   = null;
+var pixStatusTimer = null;
+var pixExpireTimer = null;
+var pixCountSecs   = 900;
+var countdownTimer = null;
+var initiatedCk    = false;
+
+// ==========================================
+// INIT
+// ==========================================
+window.scrollTo(0,0);
+window.addEventListener('load', function(){ window.scrollTo(0,0); });
+document.getElementById('today-date').textContent = new Date().toLocaleDateString('pt-BR');
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// VSL lazy load
+var vslBox  = document.getElementById('vslBox');
+var vslPlay = document.getElementById('vslPlay');
+if(vslBox && vslPlay){
+  vslPlay.addEventListener('click', function(){
+    var src   = vslBox.getAttribute('data-src');
+    var video = document.createElement('video');
+    video.src = src; video.controls = true; video.autoplay = true;
+    video.playsInline = true; video.setAttribute('preload','auto');
+    vslBox.innerHTML = ''; vslBox.appendChild(video);
+    video.play().catch(function(){});
+  }, {once:true});
+}
+
+// ==========================================
+// ABRIR / FECHAR CHECKOUT
+// ==========================================
+function abrirCheckout(plano){
+  currentPlan = plano || 'premium';
+  bumpsSelected = [false,false,false];
+  initiatedCk   = false;
+  pixPaymentId  = null;
+
+  // Reset telas
+  document.getElementById('form-screen').style.display    = 'block';
+  document.getElementById('pix-screen').style.display     = 'none';
+  document.getElementById('confirm-screen').style.display = 'none';
+
+  // Reset bumps visuais
+  [0,1,2].forEach(function(i){
+    document.getElementById('bump-'+i).classList.remove('selected');
+    document.getElementById('bck-'+i).style.color = 'transparent';
+    document.getElementById('s-bump-'+i).style.display = 'none';
+    document.getElementById('p-bump-'+i).style.display = 'none';
+  });
+
+  // Reset form
+  ['f-nome','f-email','f-zap'].forEach(function(id){
+    document.getElementById(id).value = '';
+    document.getElementById(id).classList.remove('error');
+  });
+  ['err-nome','err-email','err-zap'].forEach(function(id){
+    document.getElementById(id).style.display = 'none';
+  });
+  var btn = document.getElementById('btn-gerar');
+  btn.classList.remove('loading'); btn.disabled = false;
+
+  renderPlanBadge();
+
+  // Pixel: PageView do checkout
+  fbq('track','PageView');
+  sendMetaEvent('PageView', {});
+
+  // Abre overlay
+  var ov = document.getElementById('ck-overlay');
+  ov.classList.add('open');
+  ov.scrollTop = 0;
+  document.body.style.overflow = 'hidden';
+
+  startUrgencyCountdown();
+}
+
+function fecharCheckout(){
+  document.getElementById('ck-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+  if(countdownTimer) clearInterval(countdownTimer);
+  if(pixStatusTimer) clearInterval(pixStatusTimer);
+  if(pixExpireTimer) clearInterval(pixExpireTimer);
+}
+
+// Fecha ao clicar fora do modal
+document.getElementById('ck-overlay').addEventListener('click', function(e){
+  if(e.target === this) fecharCheckout();
+});
+
+// ==========================================
+// PLANO
+// ==========================================
+function renderPlanBadge(){
+  var pl = PLANS[currentPlan];
+  document.getElementById('plan-name-display').textContent = pl.name;
+  document.getElementById('plan-old-display').textContent  = pl.old;
+  document.getElementById('plan-price-display').textContent= pl.label;
+  document.getElementById('s-plan-name').textContent       = pl.name;
+  document.getElementById('s-plan-price').textContent      = pl.label;
+  document.getElementById('p-plan-name').textContent       = pl.name;
+  document.getElementById('p-plan-price').textContent      = pl.label;
+  updateTotal();
+}
+
+// ==========================================
+// BUMPS
+// ==========================================
+function toggleBump(i){
+  bumpsSelected[i] = !bumpsSelected[i];
+  var sel = bumpsSelected[i];
+  document.getElementById('bump-'+i).classList.toggle('selected', sel);
+  document.getElementById('bck-'+i).style.color = sel ? '#fff' : 'transparent';
+  document.getElementById('s-bump-'+i).style.display = sel ? 'flex' : 'none';
+  document.getElementById('p-bump-'+i).style.display = sel ? 'flex' : 'none';
+  updateTotal();
+}
+
+function updateTotal(){
+  var total = getTotal();
+  var fmt   = 'R$' + total.toFixed(2).replace('.',',');
+  document.getElementById('s-total').textContent = fmt;
+  document.getElementById('p-total').textContent = fmt;
+}
+
+function getTotal(){
+  return parseFloat((PLANS[currentPlan].price + bumpsSelected.filter(Boolean).length * BUMP_PRICE).toFixed(2));
+}
+
+// ==========================================
+// MÁSCARA TELEFONE
+// ==========================================
+function maskPhone(el){
+  var v = el.value.replace(/\D/g,'').substring(0,11);
+  el.value = v.length <= 10
+    ? v.replace(/(\d{2})(\d{4})(\d{0,4})/,'($1) $2-$3')
+    : v.replace(/(\d{2})(\d{5})(\d{0,4})/,'($1) $2-$3');
+}
+
+// ==========================================
+// INITIATE CHECKOUT ao digitar nome
+// ==========================================
+function onNameInput(el){
+  if(!initiatedCk && el.value.trim().length >= 3){
+    initiatedCk = true;
+    fbq('track','InitiateCheckout',{ value:getTotal(), currency:'BRL', content_name:PLANS[currentPlan].name });
+    sendMetaEvent('InitiateCheckout',{ value:getTotal(), currency:'BRL' });
   }
+}
 
-  // Pixel ViewContent ao clicar em botão de plano
-  function trackClick(plano){
-    var val = plano === 'premium' ? 19.90 : 5.99;
-    fbq('track', 'ViewContent', {
-      value: val,
-      currency: 'BRL',
-      content_name: plano === 'premium' ? 'Pacote Premium' : 'Pacote Básico'
+// ==========================================
+// VALIDAÇÃO
+// ==========================================
+function validate(){
+  var ok = true;
+  var fields = {nome:'f-nome', email:'f-email', zap:'f-zap'};
+  Object.keys(fields).forEach(function(k){
+    document.getElementById('err-'+k).style.display = 'none';
+    document.getElementById(fields[k]).classList.remove('error');
+  });
+  if(document.getElementById('f-nome').value.trim().length < 3){
+    document.getElementById('err-nome').style.display = 'block';
+    document.getElementById('f-nome').classList.add('error'); ok = false;
+  }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.getElementById('f-email').value.trim())){
+    document.getElementById('err-email').style.display = 'block';
+    document.getElementById('f-email').classList.add('error'); ok = false;
+  }
+  if(document.getElementById('f-zap').value.replace(/\D/g,'').length < 10){
+    document.getElementById('err-zap').style.display = 'block';
+    document.getElementById('f-zap').classList.add('error'); ok = false;
+  }
+  return ok;
+}
+
+// ==========================================
+// GERAR PIX
+// ==========================================
+async function gerarPix(){
+  if(!validate()) return;
+  var btn = document.getElementById('btn-gerar');
+  btn.classList.add('loading'); btn.disabled = true;
+
+  var nome  = document.getElementById('f-nome').value.trim();
+  var email = document.getElementById('f-email').value.trim();
+  var zap   = document.getElementById('f-zap').value.replace(/\D/g,'');
+  var valor = getTotal();
+  var bumps = bumpsSelected.map(function(v,i){ return v?'bump'+(i+1):null; }).filter(Boolean);
+
+  try {
+    var res  = await fetch('/api/criar-pix',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({ nome, email, zap, valor, plano:currentPlan, bumps })
     });
+    var data = await res.json();
+    if(data.error) throw new Error(data.error);
+
+    pixPaymentId = data.payment_id;
+    document.getElementById('qr-img').src              = data.qr_image;
+    document.getElementById('pix-code-text').textContent = data.pix_code;
+
+    // Troca de tela
+    document.getElementById('form-screen').style.display = 'none';
+    document.getElementById('pix-screen').style.display  = 'block';
+    document.getElementById('ck-overlay').scrollTop      = 0;
+
+    fbq('track','AddPaymentInfo',{ value:valor, currency:'BRL', content_name:PLANS[currentPlan].name });
+
+    startStatusPolling(nome, email, valor);
+    startPixExpireCountdown();
+
+  } catch(e){
+    alert('Erro ao gerar PIX: ' + e.message + '\nTente novamente.');
+    btn.classList.remove('loading'); btn.disabled = false;
   }
+}
+
+// ==========================================
+// COPIAR PIX
+// ==========================================
+function copyPix(){
+  var code = document.getElementById('pix-code-text').textContent;
+  var btn  = document.getElementById('btn-copy');
+  var success = function(){
+    btn.textContent = '✅ Código copiado!';
+    btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent='📋 Copiar código PIX'; btn.classList.remove('copied'); }, 3000);
+  };
+  if(navigator.clipboard){ navigator.clipboard.writeText(code).then(success); }
+  else {
+    var ta = document.createElement('textarea');
+    ta.value = code; ta.style.cssText = 'position:fixed;opacity:0';
+    document.body.appendChild(ta); ta.focus(); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    success();
+  }
+}
+
+// ==========================================
+// POLLING STATUS
+// ==========================================
+function startStatusPolling(nome, email, valor){
+  if(pixStatusTimer) clearInterval(pixStatusTimer);
+  pixStatusTimer = setInterval(async function(){
+    try {
+      var res  = await fetch('/api/status-pix?id='+pixPaymentId);
+      var data = await res.json();
+      if(data.status === 'approved'){
+        clearInterval(pixStatusTimer);
+        clearInterval(pixExpireTimer);
+        showConfirmacao(nome, email, valor);
+      } else if(data.status === 'rejected' || data.status === 'cancelled'){
+        clearInterval(pixStatusTimer);
+        document.getElementById('status-text').textContent = '❌ Pagamento não aprovado. Feche e tente novamente.';
+        document.querySelector('.status-dot').style.background = '#C0392B';
+        document.querySelector('.status-dot').style.animation  = 'none';
+      }
+    } catch(e){}
+  }, 5000);
+}
+
+// ==========================================
+// COUNTDOWN PIX EXPIRA (15 min)
+// ==========================================
+function startPixExpireCountdown(){
+  pixCountSecs = 900;
+  if(pixExpireTimer) clearInterval(pixExpireTimer);
+  pixExpireTimer = setInterval(function(){
+    pixCountSecs--;
+    var m = Math.floor(pixCountSecs/60), s = pixCountSecs%60;
+    document.getElementById('pix-countdown').textContent =
+      String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+    if(pixCountSecs <= 0){
+      clearInterval(pixExpireTimer);
+      document.getElementById('status-text').textContent = '⏰ PIX expirado. Feche e gere novamente.';
+    }
+  }, 1000);
+}
+
+// ==========================================
+// CONFIRMAÇÃO
+// ==========================================
+function showConfirmacao(nome, email, valor){
+  document.getElementById('pix-screen').style.display     = 'none';
+  document.getElementById('confirm-screen').style.display = 'block';
+  document.getElementById('confirm-nome').textContent  = nome.split(' ')[0];
+  document.getElementById('confirm-email').textContent = email;
+  document.getElementById('access-link').href = ACCESS_URLS[currentPlan] || '#';
+  document.getElementById('ck-overlay').scrollTop = 0;
+
+  fbq('track','Purchase',{ value:valor, currency:'BRL', content_name:PLANS[currentPlan].name, content_type:'product' });
+  sendMetaEvent('Purchase',{ value:valor, currency:'BRL' });
+}
+
+// ==========================================
+// COUNTDOWN URGÊNCIA (10 min)
+// ==========================================
+function startUrgencyCountdown(){
+  if(countdownTimer) clearInterval(countdownTimer);
+  var secs = 600;
+  var el   = document.getElementById('countdown');
+  countdownTimer = setInterval(function(){
+    secs--;
+    var m = Math.floor(secs/60), s = secs%60;
+    el.textContent = String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+    if(secs <= 0){ clearInterval(countdownTimer); el.textContent = '00:00'; }
+  }, 1000);
+}
+
+// ==========================================
+// META CONVERSIONS API (server-side)
+// ==========================================
+async function sendMetaEvent(eventName, data){
+  try {
+    await fetch('/api/meta-event',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        event:    eventName,
+        email:    document.getElementById('f-email') ? document.getElementById('f-email').value.trim() : '',
+        phone:    document.getElementById('f-zap')   ? document.getElementById('f-zap').value.replace(/\D/g,'') : '',
+        value:    data.value,
+        currency: data.currency || 'BRL',
+        url:      window.location.href,
+        fbp:      getCookie('_fbp'),
+        fbc:      getCookie('_fbc')
+      })
+    });
+  } catch(e){}
+}
+
+function getCookie(name){
+  var m = document.cookie.match(new RegExp('(?:^|; )'+name+'=([^;]*)'));
+  return m ? m[1] : '';
+}
 </script>
 </body>
 </html>
