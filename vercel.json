@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/*.js", "use": "@vercel/node" },
+    { "src": "*.html",   "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/checkout", "dest": "/checkout.html" },
+    { "src": "/",         "dest": "/index.html" }
+  ],
+  "env": {
+    "MP_ACCESS_TOKEN":   "@mp_access_token",
+    "META_PIXEL_ID":     "@meta_pixel_id",
+    "META_ACCESS_TOKEN": "@meta_access_token"
+  }
+}
