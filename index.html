@@ -945,17 +945,32 @@ window.addEventListener('load', function(){ window.scrollTo(0,0); });
 document.getElementById('today-date').textContent = new Date().toLocaleDateString('pt-BR');
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// VSL lazy load
-var vslBox  = document.getElementById('vslBox');
-var vslPlay = document.getElementById('vslPlay');
+// VSL lazy load + pausa quando o video sai da tela
+var vslBox   = document.getElementById('vslBox');
+var vslPlay  = document.getElementById('vslPlay');
+var vslVideo = null;        // referencia do video depois de criado
+var vslAutoPaused = false;  // true quando foi a rolagem que pausou
 if(vslBox && vslPlay){
   vslPlay.addEventListener('click', function(){
-    var src   = vslBox.getAttribute('data-src');
-    var video = document.createElement('video');
-    video.src = src; video.controls = true; video.autoplay = true;
-    video.playsInline = true; video.setAttribute('preload','auto');
-    vslBox.innerHTML = ''; vslBox.appendChild(video);
-    video.play().catch(function(){});
+    var src = vslBox.getAttribute('data-src');
+    vslVideo = document.createElement('video');
+    vslVideo.src = src; vslVideo.controls = true; vslVideo.autoplay = true;
+    vslVideo.playsInline = true; vslVideo.setAttribute('preload','auto');
+    vslBox.innerHTML = ''; vslBox.appendChild(vslVideo);
+    vslVideo.play().catch(function(){});
+
+    // Pausa o video quando sai da tela; retoma so se a rolagem foi a causa
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        var e = entries[0];
+        if(e.isIntersecting){
+          if(vslAutoPaused && !vslVideo.ended){ vslVideo.play().catch(function(){}); vslAutoPaused = false; }
+        } else if(!vslVideo.paused){
+          vslVideo.pause(); vslAutoPaused = true;
+        }
+      }, { threshold: 0.5 });
+      io.observe(vslVideo);
+    }
   }, {once:true});
 }
 
@@ -980,6 +995,9 @@ function abrirCheckout(plano){
   // Banner conforme o plano
   var bImg = document.getElementById('ck-banner-img');
   if(bImg) bImg.src = BANNERS[currentPlan] || '';
+
+  // Pausa o video da VSL ao abrir o checkout
+  if(vslVideo && !vslVideo.paused){ vslVideo.pause(); vslAutoPaused = false; }
 
   // Reset telas
   document.getElementById('form-screen').style.display    = 'block';
