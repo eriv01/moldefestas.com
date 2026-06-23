@@ -282,12 +282,11 @@ footer{text-align:center;font-size:11.5px;color:var(--muted);padding:26px 20px 2
 /* banner checkout */
 .ck-banner{
   position:relative;
-  width:100%;aspect-ratio:16/7;
+  width:100%;
   background:linear-gradient(135deg,var(--green-dark),var(--green));
-  display:flex;align-items:center;justify-content:center;
   overflow:hidden;
 }
-.ck-banner img{width:100%;height:100%;object-fit:cover;}
+.ck-banner img{display:block;width:100%;height:auto;}
 /* ⬇️ Substitua o conteúdo abaixo por <img src="URL_DO_SEU_BANNER"> */
 .ck-banner-ph{color:#fff;font-family:'Baloo 2',sans-serif;font-size:13px;font-weight:700;text-align:center;padding:16px;opacity:.75;}
 
@@ -1241,12 +1240,10 @@ function showConfirmacao(nome, email, valor){
 
 // ==========================================
 // COUNTDOWN URGÊNCIA (10 min)
-// Barra de urgencia removida do checkout: a funcao
-// sai sem fazer nada se o elemento nao existir.
 // ==========================================
 function startUrgencyCountdown(){
   var el = document.getElementById('countdown');
-  if(!el) return;
+  if(!el) return; // guarda de seguranca
   if(countdownTimer) clearInterval(countdownTimer);
   var secs = 600;
   countdownTimer = setInterval(function(){
